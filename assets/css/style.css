@@ -88,6 +88,35 @@ article li {
     font-size: 150%;
 }
 
-.about-me p {
-    
+.about-me p {    
+}
+
+/*My Work Styles*/
+.my-work {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 10px 5px 10px;
+}
+
+.my-work h3 {
+    font-size: 150%;
+}
+
+/*Contact Me Styles*/
+.contact-me {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 10px 5px 10px;
+}
+
+.contact-me h3 {
+    font-size: 150%;
+}
+
+/*Resume Styles*/
+.resume {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 10px 5px 10px;
+}
+
+.resume h3 {
+    font-size: 150%;
 }
