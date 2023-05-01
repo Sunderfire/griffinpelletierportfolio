@@ -1,0 +1,93 @@
+:root {
+    --navyblue: #099BE8;
+    --lightblue: #D3F0FF;
+    --darkblue: #025B8A;
+    --green: green;
+    --white: #fff;
+    --red: red;
+    --black: black;
+    --creme: #EAECD7;
+}
+
+/*Header Styles*/
+header {
+    display: inline-block;
+    position: relative;
+    width: 90.8%;
+    margin: 10px;
+    padding: 10px;
+    background-image: url("./assets/css/images/chandlertheturtle.jpeg/");
+    color: var(--white);
+}
+
+header h1 {
+    font-size: 300%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header p {
+    font-size: 150%;
+}
+
+#header-image {
+    background-image: ;
+    background-color: #cccccc; 
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
+
+
+/*Nav Styles*/
+nav {
+    width: 8%;
+    float: right;
+    position: relative;
+}
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid darkblue;
+    border-radius: 8px;
+    background-color: var(--navyblue);
+    color: var(--white);
+}
+
+nav a:hover {
+    
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 8px var(--lightblue), 0 0 15px var(--lightblue);
+    cursor: grab;
+    }
+
+nav a:active {
+    transition: none;
+    background-color: var(--lightblue);
+    color: var(--black);
+}    
+
+/* Body Styles */
+article li {
+    margin: 5px 0 5px 0;
+}
+
+/* About Me Styles*/
+.about-me {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 10px 5px 10px;
+}
+
+.about-me h3 {
+    font-size: 150%;
+}
+
+.about-me p {
+    
+}
