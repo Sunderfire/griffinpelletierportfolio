@@ -1,12 +1,17 @@
 :root {
     --navyblue: #099BE8;
-    --lightblue: #D3F0FF;
-    --darkblue: #025B8A;
-    --green: green;
+    --lightblue: #E0F3FC;
+    --darkblue: #033A57;
+    --magenta: #E8099B;
     --white: #fff;
     --red: red;
     --black: black;
     --creme: #EAECD7;
+}
+
+/*HTML Styles*/
+html {
+    background-color: #C2E6F9;
 }
 
 /*Header Styles*/
@@ -16,7 +21,6 @@ header {
     width: 90.8%;
     margin: 10px;
     padding: 10px;
-    background-image: url(assets/images/chandlertheturtle.jpeg);
     color: var(--white);
 }
 
@@ -30,13 +34,13 @@ header p {
 }
 
 #header-image {
-    background-image: ;
-    background-color: #cccccc; 
-    height: 500px; 
+    background-image: url("../images/chandlertheturtle.jpeg");
+    background-color: #cccccc;
+    height: 400px; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-  }
+}
 
 
 /*Nav Styles*/
@@ -51,19 +55,18 @@ nav a {
     flex-direction: row;
     align-items: center;
     width: 120px;
-    height: 40px;
-    margin: 10px;
+    height: 50px;
+    margin: 50px 10px 50px 10px;
     padding: 10px;
-    border: 3px solid darkblue;
+    border: 3px solid var(--darkblue);
     border-radius: 8px;
     background-color: var(--navyblue);
     color: var(--white);
 }
 
 nav a:hover {
-    
     transition: all 0.5s ease-in-out;
-    box-shadow: inset 0px 0px 8px var(--lightblue), 0 0 15px var(--lightblue);
+    box-shadow: inset 0px 0px 8px var(--magenta), 0 0 15px var(--magenta);
     cursor: grab;
     }
 
@@ -71,6 +74,7 @@ nav a:active {
     transition: none;
     background-color: var(--lightblue);
     color: var(--black);
+    border-color: var(--magenta);
 }    
 
 /* Body Styles */
@@ -80,8 +84,14 @@ article li {
 
 /* About Me Styles*/
 .about-me {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-flex; 
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 600px;
     margin: 5px 10px 5px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--darkblue);
 }
 
 .about-me h3 {
@@ -95,11 +105,90 @@ article li {
 .my-work {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .my-work h3 {
     font-size: 150%;
+    color: var(--darkblue);
 }
+
+.my-work h4 {
+    
+}
+
+/*.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 
+    repeat(5, 1fr);
+}*/
+
+/*My Work Main Styles*/
+.main-work img {
+    margin: 25px 10px 25px 10px;
+    border: 5px solid var(--darkblue);
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+}
+
+#main-work-header {
+    position: absolute;
+    bottom: -40px;
+    left: 375px;
+    margin-top: -50px;
+    padding: 10px;
+    border: 5px solid var(--darkblue);
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    z-index: 1;
+    background-color: var(--navyblue);
+    color: var(--darkblue);
+    font-size: 150%;
+}
+
+.main-work img:hover {
+transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 8px var(--magenta), 0 0 15px var(--magenta);
+    cursor: grab;
+}
+
+.main-work img:hover + #main-work-header {
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 8px var(--magenta), 0 0 15px var(--magenta);
+    cursor: grab;
+}
+
+.main-work img:active {
+    transition: none;
+    border-color: var(--magenta);
+}
+
+.main-work img:active + #main-work-header {
+    transition: none;
+    border-color: var(--magenta);
+    color: var(--magenta);
+}
+
+/*My Work Coming Soon Styles*/
+#coming-soon {
+    margin: 25px 10px 25px 10px;
+    padding: 10px;
+    border: 3px solid var(--darkblue);
+    border-radius: 8px;
+    background-image: url("../images/comingsoon.jpg");
+    background-color: #cccccc;
+    width: 400px;
+    height: 200px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
 
 /*Contact Me Styles*/
 .contact-me {
