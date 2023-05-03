@@ -98,9 +98,6 @@ article li {
     font-size: 150%;
 }
 
-.about-me p {    
-}
-
 /*My Work Styles*/
 .my-work {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -115,23 +112,12 @@ article li {
     color: var(--darkblue);
 }
 
-.my-work h4 {
-    
-}
-
-/*.grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 
-    repeat(5, 1fr);
-}*/
-
 /*My Work Main Styles*/
 .main-work img {
     margin: 25px 10px 25px 10px;
     border: 5px solid var(--darkblue);
     border-radius: 10px;
-    width: 800px;
+    width: 775px;
     height: 400px;
 }
 
@@ -175,7 +161,7 @@ transition: all 0.5s ease-in-out;
 }
 
 /*My Work Coming Soon Styles*/
-#coming-soon {
+.coming-soon {
     margin: 25px 10px 25px 10px;
     padding: 10px;
     border: 3px solid var(--darkblue);
@@ -183,29 +169,71 @@ transition: all 0.5s ease-in-out;
     background-image: url("../images/comingsoon.jpg");
     background-color: #cccccc;
     width: 400px;
-    height: 200px; 
+    height: 400px; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
 
+.coming-soon:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 8px var(--magenta), 0 0 15px var(--magenta);
+    cursor: grab;
+}
+
+.coming-soon:active {
+    transition: none;
+    border-color: var(--magenta);
+}
 
 /*Contact Me Styles*/
 .contact-me {
+    margin: 20px 10px 5px 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 5px 10px 5px 10px;
+    color: var(--darkblue);
 }
 
 .contact-me h3 {
     font-size: 150%;
 }
 
+.contact-me a {
+    display: flex;
+    justify-content:flex-start;
+}
+
 /*Resume Styles*/
 .resume {
+    margin: 20px 10px 20px 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 5px 10px 5px 10px;
+    color: var(--darkblue);
 }
 
 .resume h3 {
     font-size: 150%;
+}
+
+/*Media Screen Queries*/
+@media screen and (max-width: 992px) {
+    #header-image {
+        width: 75%;
+    }
+    .about-me {
+        left: 20%;
+    }
+    #main-work-header {
+        bottom: -15%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #header-image {
+        width: 75%;
+    }
+    .about-me {
+        left: 20%;
+    }
+    #main-work-header {
+        bottom: -23%;
+    }
 }
